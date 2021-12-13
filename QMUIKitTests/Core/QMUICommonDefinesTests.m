@@ -28,6 +28,11 @@
     CGFloat c = 1.033;
     CGFloat d = 1.099;
     
+    
+    
+    
+    
+    
     XCTAssertTrue(CGFloatEqualToFloat(a, b));
     XCTAssertTrue(CGFloatEqualToFloat(b, c));
     XCTAssertTrue(CGFloatEqualToFloat(c, d));

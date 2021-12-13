@@ -13,6 +13,7 @@
 #ifndef QMUIKit_h
 #define QMUIKit_h
 
+//测试
 static NSString * const QMUI_VERSION = @"4.3.0";
 
 #if __has_include("CAAnimation+QMUI.h")
