@@ -96,15 +96,8 @@ static NSString * const kImageOrUnknownCellIdentifier = @"imageorunknown";
 
 - (void)setupNavigationItems {
     [super setupNavigationItems];
-    
-    QMUINavigationButton *cancelBtn = [[QMUINavigationButton alloc] init];
-    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
-    [cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
-    cancelBtn.titleLabel.font = [UIFont systemFontOfSize:16];
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem qmui_itemWithButton:cancelBtn target:self action:@selector(handleCancelPickerImage:)];
-    
-//
+        
+
 //    self.navigationItem.rightBarButtonItem = [UIBarButtonItem qmui_itemWithTitle:@"取消" target:self action:@selector(handleCancelPickerImage:)];
 }
 

@@ -141,6 +141,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, assign) BOOL shouldShowDefaultLoadingView;
 
+//取消事件
+- (void)handleCancelPickerImage:(id)sender;
+
 @end
 
 
