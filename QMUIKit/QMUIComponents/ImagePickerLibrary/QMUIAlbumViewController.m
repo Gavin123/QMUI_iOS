@@ -144,7 +144,23 @@
     if (!self.title) {
         self.title = @"照片";
     }
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem qmui_itemWithTitle:@"取消" target:self action:@selector(handleCancelSelectAlbum:)];
+    
+    
+//    let btn = QMUINavigationButton(type: .normal, title: "取消").then {
+//        $0.tintColor = .c666666
+//        $0.titleLabel?.font = .PFRegular(16)
+//    }
+    
+    
+    QMUINavigationButton *cancelBtn = [[QMUINavigationButton alloc] init];
+    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+    [cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    cancelBtn.titleLabel.font = [UIFont systemFontOfSize:16];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem qmui_itemWithButton:cancelBtn target:self action:@selector(handleCancelSelectAlbum:)];
+    
+    
+//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem qmui_itemWithTitle:@"取消" target:self action:@selector(handleCancelSelectAlbum:)];
 }
 
 - (void)initTableView {
